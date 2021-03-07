@@ -1,0 +1,43 @@
+version: "2.0"
+
+rules:
+
+- rule: user greet then bot greet too
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: say thank you anytime user says thank you
+  steps:
+  - intent: thankyou
+  - action: utter_thankyou
+
+- rule: user challenging bot, bot say i'm a bot
+  steps:
+    - intent: ask_bot
+    - action: utter_bot
+
+- rule: out of subjet
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback_nlu
+
+- rule: user ask speaking language
+  steps:
+    - intent: ask_language
+    - action: utter_language
+
+- rule: user ask age, bot give age
+  steps:
+  - intent: ask_age
+  - action: utter_age
+
+- rule: user ask bot age, bot respond
+  steps:
+  - intent: ask_sex
+  - action: utter_sex

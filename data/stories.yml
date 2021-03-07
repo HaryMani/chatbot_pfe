@@ -1,0 +1,2438 @@
+version: "2.0"
+stories:
+- story: user ask bot to subscribe to newsletter
+  steps:
+  - intent: get_newsletter
+  - action: utter_ask_mail
+  - intent: inform_mail
+  - action: utter_set_newsletter
+- story: asking course faculty sde ntl 1
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_info_ce
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 2
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_info_eee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 3
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 4
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_info_fmhre
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 5
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_info_ee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 6
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_info_eea
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 7
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 8
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_info_spw
+  - intent: get_fee
+  - action: utter_fee_post_spw
+- story: asking course faculty sde ntl 9
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_info_eesd
+  - intent: get_fee
+  - action: utter_fee_post_eesd
+- story: asking course faculty sde sadc 1
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_info_ce
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 2
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_info_eee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 3
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 4
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_info_fmhre
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 5
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_info_ee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 6
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_info_eea
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 7
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 8
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_info_spw
+  - intent: get_fee
+  - action: utter_fee_post_spw
+- story: asking course faculty sde sadc 9
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_info_eesd
+  - intent: get_fee
+  - action: utter_fee_post_eesd
+- story: asking course faculty sde intl 1
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_info_ce
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 2
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_info_eee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 3
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 4
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_info_fmhre
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 5
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_info_ee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 6
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_info_eea
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 7
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 8
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_info_spw
+  - intent: get_fee
+  - action: utter_fee_post_spw
+- story: asking course faculty sde intl 9
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_info_eesd
+  - intent: get_fee
+  - action: utter_fee_post_eesd
+- story: asking course faculty sde ntl 1 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_info_ce
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 2 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_info_eee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 3 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 4 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_info_fmhre
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 5 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_info_ee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 6 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_info_eea
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 7 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 8 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_info_spw
+  - intent: get_fee
+  - action: utter_fee_post_spw
+- story: asking course faculty sde ntl 9 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_info_eesd
+  - intent: get_fee
+  - action: utter_fee_post_eesd
+- story: asking course faculty sde sadc 1 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_info_ce
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 2 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_info_eee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 3 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 4 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_info_fmhre
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 5 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_info_ee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 6 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_info_eea
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 7 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 8 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_info_spw
+  - intent: get_fee
+  - action: utter_fee_post_spw
+- story: asking course faculty sde sadc 9 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_info_eesd
+  - intent: get_fee
+  - action: utter_fee_post_eesd
+- story: asking course faculty sde ntl 1 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_info_ce
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 2 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_info_eee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 3 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 4 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_info_fmhre
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 5 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_info_ee
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 6 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_info_eea
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 7 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_info_ere
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 8 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_info_spw
+  - intent: get_fee
+  - action: utter_fee_post_spw
+- story: asking course faculty sde ntl 9 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_info_eesd
+  - intent: get_fee
+  - action: utter_fee_post_eesd
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: asking course faculty ict ntl1
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+    entities:
+    - faculty_ict: information communication technology
+  - action: utter_course_ict
+  - intent: inform_acs
+    entities:
+    - ict_course: applied computer science
+  - action: utter_info_acs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+    entities:
+    - ntl_origin: mauritius
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 2
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_info_gdm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 3
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_info_se
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 4
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_info_air
+  - intent: get_fee
+  - action: utter_fee_post_air
+- story: asking course faculty ict sadc 1
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_info_acs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 2
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_info_gdm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 3
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_info_se
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 4
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_info_air
+  - intent: get_fee
+  - action: utter_fee_post_air
+- story: asking course faculty ict intl 1
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_info_acs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict intl 2
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_info_gdm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict intl 3
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_info_se
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict intl 4
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_info_air
+  - intent: get_fee
+  - action: utter_fee_post_air
+- story: asking course faculty ict ntl 1 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_info_acs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 2 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_info_gdm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 3 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_info_se
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 4 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_info_air
+  - intent: get_fee
+  - action: utter_fee_post_air
+- story: asking course faculty ict sadc 1 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_info_acs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 2 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_info_gdm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 3 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_info_se
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 4 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_info_air
+  - intent: get_fee
+  - action: utter_fee_post_air
+- story: asking course faculty ict ntl 1 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_info_acs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 2 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_info_gdm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 3 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_info_se
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 4 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_info_air
+  - intent: get_fee
+  - action: utter_fee_post_air
+- story: asking course faculty bm ntl 5
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_info_af
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 6
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_info_bfs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 7
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_info_hrm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 8
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_info_mkt
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 9
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_info_sbm
+  - intent: get_fee
+  - action: utter_fee_post_sbm
+- story: asking course faculty bm sadc 5
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_info_af
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 6
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_info_bfs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 7
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_info_hrm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 8
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_info_mkt
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 9
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_info_sbm
+  - intent: get_fee
+  - action: utter_fee_post_sbm
+- story: asking course faculty bm intl 5
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_info_af
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 6
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_info_bfs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 7
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_info_hrm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 8
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_info_mkt
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 9
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_info_sbm
+  - intent: get_fee
+  - action: utter_fee_post_sbm
+- story: asking course faculty bm ntl 5 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_info_af
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 6 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_info_bfs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 7 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_info_hrm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 8 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_info_mkt
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 9 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_info_sbm
+  - intent: get_fee
+  - action: utter_fee_post_sbm
+- story: asking course faculty bm sadc 5 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_info_af
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 6 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_info_bfs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 7 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_info_hrm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 8 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_info_mkt
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 9 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_info_sbm
+  - intent: get_fee
+  - action: utter_fee_post_sbm
+- story: asking course faculty bm ntl 5 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_info_af
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 6 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_info_bfs
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 7 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_info_hrm
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 8 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_info_mkt
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 9 + why
+  steps:
+  - intent: get_course
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_info_sbm
+  - intent: get_fee
+  - action: utter_fee_post_sbm
+- story: asking course faculty sde ntl 1
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 2
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 3
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 4
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 5
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 6
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 7
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 8
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_spw
+  - action: utter_fee_post_spw
+- story: asking course faculty sde ntl 9
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eesd
+  - action: utter_fee_post_eesd
+- story: asking course faculty sde sadc 1
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 2
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 3
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 4
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 5
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 6
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 7
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde intl 1
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 2
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 3
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 4
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 5
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 6
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde intl 7
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 1 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 2 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 3 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 4 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 5 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 6 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde ntl 7 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty sde sadc 1 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 2 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 3 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 4 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 5 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 6 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde sadc 7 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty sde ntl 1 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ce
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 2 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 3 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 4 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_fmhre
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 5 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 6 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_eea
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty sde ntl 7 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_sde
+  - action: utter_course_sde
+  - intent: inform_ere
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 1
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 2
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 3
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 4
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_air
+  - action: utter_fee_post_air
+- story: asking course faculty ict sadc 1
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 2
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 3
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict intl 1
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict intl 2
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict intl 3
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 1 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 2 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict ntl 3 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty ict sadc 1 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 2 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict sadc 3 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty ict ntl 1 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_acs
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 2 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_gdm
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty ict ntl 3 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_ict
+  - action: utter_course_ict
+  - intent: inform_se
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 5
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 6
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 7
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 8
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_ask_country
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 9
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_sbm
+  - action: utter_fee_post_sbm
+- story: asking course faculty bm sadc 5
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 6
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 7
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 8
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_ask_country
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm intl 5
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 6
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 7
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm intl 8
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_ask_country
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 5 + why
+  steps:
+  - intent: get_fee
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 6 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 7 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm ntl 8 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_ntl
+  - action: utter_fee_under_ntl
+- story: asking course faculty bm sadc 5 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 6 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 7 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm sadc 8 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_sadc
+  - action: utter_fee_under_sadc
+- story: asking course faculty bm ntl 5 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_af
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 6 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_bfs
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 7 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_hrm
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: asking course faculty bm ntl 8 + why
+  steps:
+  - intent: get_fee
+  - action: utter_faculty
+  - intent: inform_faculty_bm
+  - action: utter_course_bm
+  - intent: inform_mkt
+  - action: utter_ask_country
+  - intent: why
+  - action: utter_explain
+  - intent: inform_intl
+  - action: utter_fee_under_intl
+- story: user bot speaking language
+  steps:
+  - intent: ask_language
+  - action: utter_language
+- story: user ask bot name
+  steps:
+  - intent: ask_name
+  - action: utter_introduce
+- story: user ask sex
+  steps:
+  - intent: ask_sex
+  - action: utter_sex
+- story: user ask bot age
+  steps:
+  - intent: ask_age
+  - action: utter_age
+- story: user ask slogan
+  steps:
+  - intent: ask_slogan
+    entities:
+    - udm_name: udm
+  - action: utter_slogan
+- story: user intent to get application
+  steps:
+  - intent: get_registration
+  - action: utter_registration
+- story: user want to be informed about intake date
+  steps:
+  - intent: get_intake
+  - action: utter_intake
+- story: user curious about udm story
+  steps:
+  - intent: get_story
+    entities:
+    - udm_name: udm
+  - action: utter_story
+- story: user ask location
+  steps:
+  - intent: get_address
+    entities:
+    - udm_name: udm
+  - action: utter_address_udm
+- story: user want to contact person
+  steps:
+  - intent: get_contact
+  - action: utter_contact
+- story: user ask degree
+  steps:
+  - intent: get_degree
+  - action: utter_degree
+- story: user ask bot oe human
+  steps:
+  - intent: ask_bot
+  - action: utter_bot
+- story: user ask campus
+  steps:
+  - intent: get_campus
+  - action: utter_campus
+- story: user ask social media
+  steps:
+  - intent: get_soc_media
+    entities:
+    - udm_name: udm
+  - action: utter_social_media
+- story: user ask under min diploma requirement
+  steps:
+  - intent: get_min_diploma
+  - action: utter_ask_under_post_mphil_phd
+  - intent: inform_under
+    entities:
+    - course_degree: undergraduate
+  - action: utter_min_deg_under
+- story: user ask post min diploma requirement
+  steps:
+  - intent: get_min_diploma
+  - action: utter_ask_under_post_mphil_phd
+  - intent: inform_post
+    entities:
+    - course_degree: postgraduate
+  - action: utter_min_deg_post
+- story: user ask topup min diploma requirement
+  steps:
+  - intent: get_min_diploma
+  - action: utter_ask_under_post_mphil_phd
+  - intent: inform_topup
+    entities:
+    - course_degree: topup
+  - action: utter_min_deg_topup
+- story: user ask mphil phd min diploma requirement
+  steps:
+  - intent: get_min_diploma
+  - action: utter_ask_under_post_mphil_phd
+  - intent: inform_mphil_phd_course
+    entities:
+    - course_degree: phd
+  - action: utter_min_deg_mphil_phd
+- story: interactive_story_1
+  steps:
+  - intent: greet_name
+    entities:
+    - bot_name: bot
+    - username: manitra
+  - slot_was_set:
+    - username: manitra
+  - action: utter_greet_name
+- story: interactive_story_2
+  steps:
+  - intent: ask_name2
+    entities:
+    - username: manitra
+  - slot_was_set:
+    - username: manitra
+  - action: utter_set_username
+- story: interactive_story_3
+  steps:
+  - intent: inform_mail
+    entities:
+    - usermail: example@gmail.com
+  - slot_was_set:
+    - usermail: example@gmail.com
+  - action: utter_set_newsletter
+- story: Story from Conversation ID 60033da20a1b42a3a6b5a84c94d1ba59
+  steps:
+  - intent: greet_name
+    entities:
+    - bot_name: bot
+    - username: manitra
+  - action: utter_greet_name
+- story: Goodbye name
+  steps:
+  - intent: goodbye_name
+  - action: utter_goodbye_name

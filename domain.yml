@@ -1,0 +1,520 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 180
+  carry_over_slots_to_new_session: false
+intents:
+- greet:
+    use_entities: true
+- greet_name:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- goodbye_name:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- why:
+    use_entities: true
+- ask_language:
+    use_entities: true
+- ask_name:
+    use_entities: true
+- ask_name2:
+    use_entities: true
+- ask_age:
+    use_entities: true
+- ask_sex:
+    use_entities: true
+- ask_slogan:
+    use_entities: true
+- get_newsletter:
+    use_entities: true
+- inform_mail:
+    use_entities: true
+- get_course:
+    use_entities: true
+- get_intake:
+    use_entities: true
+- get_story:
+    use_entities: true
+- get_registration:
+    use_entities: true
+- get_fee:
+    use_entities: true
+- get_address:
+    use_entities: true
+- get_contact:
+    use_entities: true
+- get_faculty:
+    use_entities: true
+- get_degree:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- ask_bot:
+    use_entities: true
+- inform_mphil_phd_course:
+    use_entities: true
+- inform_under:
+    use_entities: true
+- inform_post:
+    use_entities: true
+- inform_topup:
+    use_entities: true
+- inform_ntl:
+    use_entities: true
+- inform_sadc:
+    use_entities: true
+- inform_intl:
+    use_entities: true
+- inform_faculty_sde:
+    use_entities: true
+- inform_faculty_bm:
+    use_entities: true
+- inform_faculty_ict:
+    use_entities: true
+- get_campus:
+    use_entities: true
+- get_soc_media:
+    use_entities: true
+- get_min_diploma:
+    use_entities: true
+- inform_ce:
+    use_entities: true
+- inform_eee:
+    use_entities: true
+- inform_ere:
+    use_entities: true
+- inform_fmhre:
+    use_entities: true
+- inform_ee:
+    use_entities: true
+- inform_eea:
+    use_entities: true
+- inform_eae:
+    use_entities: true
+- inform_af:
+    use_entities: true
+- inform_bfs:
+    use_entities: true
+- inform_hrm:
+    use_entities: true
+- inform_mkt:
+    use_entities: true
+- inform_acs:
+    use_entities: true
+- inform_gdm:
+    use_entities: true
+- inform_se:
+    use_entities: true
+- inform_air:
+    use_entities: true
+- inform_spw:
+    use_entities: true
+- inform_eesd:
+    use_entities: true
+- inform_sbm:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities:
+- usermail
+- ntl_origin
+- sadc_origin
+- no_sadc_origin
+- engineer_course
+- engineer_master_course
+- business_course
+- business_master_course
+- ict_course
+- ict_master_course
+- udm_name
+- bot_name
+- course_degree
+- faculty_name
+- campus_name
+- faculty_bm
+- username
+- faculty_sde
+- social_media
+- spk_language
+- faculty_ict
+slots:
+  username:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  usermail:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  country:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  faculty:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_ask_mail:
+  - text: Please give your mail
+  - text: Please type your mail below
+  utter_set_username:
+  - text: Hello {username}, nice to talk to you!
+  utter_set_newsletter:
+  - image: https://cdn.one.org/us/wp-content/uploads/2019/08/05110638/Newsletter_blog_1200x1200_v1-1-640x640.png
+    text: Great! {usermail} has been subscribed to newsletter successfully!
+  utter_greet:
+  - text: Hey, how can I help you
+  - text: Hi there, ask me a question
+  - text: Hello, tell me what you want to know
+  - text: Holla, ask me something
+  - text: Hi, please let me know if you have any questions
+  - text: Good day, may I help you
+  - text: Howdy, Ask me somtehing. I'm here to help you
+  - text: Hey there, I'm glad to help you
+  utter_greet_name:
+  - text: Hey {username}, how can I help you
+  - text: Hi {username}, ask me a question
+  - text: Hello {username}, tell me what you want to know
+  - text: Holla {username}, ask me something
+  - text: Hi {username}, please let me know if you have any questions
+  - text: Good day {username}, may I help you
+  - text: Howdy {username}, Ask me somtehing. I'm here to help you
+  - text: Hey {username}, I'm glad to help you
+  utter_goodbye:
+  - text: See you, I hope to have been useful to you
+  - text: Bye, I hope to have you help
+  - text: Bye bye, Glad to have you help
+  - text: Take care, Happy to help you
+  - text: See you
+  - text: Bye
+  - text: Bye Bye
+  - text: Take care
+  utter_goodbye_name:
+  - text: See you {username}, I hope to have been useful to you
+  - text: Bye {username}, I hope to have you help
+  - text: Bye bye {username}, Glad to have you help
+  - text: Take care {username}, Happy to help you
+  - text: See you {username}
+  - text: Bye {username}
+  - text: Bye Bye {username}
+  - text: Take care {username}
+  utter_thankyou:
+  - text: It's a pleasure to helping you!
+  - text: You're welcome!
+  - text: Don't mention it
+  utter_bot:
+  - text: I'm a bot
+  - text: I'm not a human
+  - text: I'm a bot made by human
+  - text: I'm a bot assistant
+  utter_introduce:
+  - text: I'm UDM-Bot
+  - text: My name is UDM-Bot
+  - text: Call me UDM-Bot
+  utter_introduce_name:
+  - text: I'm UDM-Bot, nice to talk to you {username}
+  - text: My name is UDM-Bot, glad to talk to you {username}
+  - text: Call me UDM-Bot, happy to talk to you {username}
+  utter_age:
+  - text: I am very young
+  - text: I was recently developed
+  - text: I'm young enough
+  utter_sex:
+  - text: I don't belong to any gender
+  - text: Concretely bots are not classified by gender
+  utter_explain:
+  - text: I collect informations for the sole purpose of giving you more precise answers
+  - text: Information from you helps me to give precise information
+  - text: Collecting information helps me provide you the right answer
+  utter_language:
+  - text: I understand English only but I am continiously improving
+  - text: I can handle only english. but I assure you that the quality of service is constantly improving
+  - text: English is the only language I understand for now, but rest assured that I will be improved from time to time
+  utter_slogan:
+  - text: --  SAVOIR C'EST POUVOIR  -- that's the UDM slogan
+  - text: The UDM slogan is \n \n --  SAVOIR C'EST POUVOIR  --
+  utter_fallback_nlu:
+  - text: Sorry, I didn't understand you, please try to input something else
+  - text: Sorry, I didn't get that, can you please rephrase
+  - text: I didn't understand, could you rephrase that?
+  - text: Could you please be more specific
+  - text: Could you please retype in an other way
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_ask_country:
+  - text: Which country do you come from?
+  - text: What is your nationality?
+  - text: What country are you from?
+  utter_ask_under_post_mphil_phd:
+  - text: Minimum Degree for which program do you want to know? \n \n undergraduate or topup or postgraduate or Mphil and PhD?
+  - text: For which program do you want to know? \n \n undergraduate or topup or postgraduate or Mphil and PhD?
+  utter_campus:
+  - text: UDM is made up of  Rose-Hill and Pamplemousses campus
+  - text: UDM is formed by Rose-Hill and Pamplemousses campus
+  - text: There are Rose-Hill and Pamplemousses campus at UDM
+  utter_faculty:
+  - buttons:
+    - payload: inform_faculty_ict
+      title: Information Communication Technology
+    - payload: inform_faculty_sde
+      title: Sustainable Development Engineering
+    - payload: inform_faculty_bm
+      title: Business and Management
+    text: There are 3 faculties, course in which faculty are you interested in?
+  utter_course_ict:
+  - buttons:
+    - payload: inform_acs
+      title: Applied Computer Science
+    - payload: inform_se
+      title: Software Engineering
+    - payload: inform_gdm
+      title: Graphics Design and Multimedia
+    - payload: inform_air
+      title: Artificial Intelligence and Robotics
+    text: 'You can choose among the following courses in Information Communication Technology faculty:'
+  utter_course_sde:
+  - buttons:
+    - payload: inform_ce
+      title: Civil Engineering
+    - payload: inform_eee
+      title: Electrical and Electronic Engineering
+    - payload: inform_ere
+      title: Electrotechnics and Renewable Energy
+    - payload: inform_fmhre
+      title: Facilities Management of Hotels and Real Estates
+    - payload: inform_ee
+      title: Electromechanical Engineering
+    - payload: inform_eea
+      title: Electrical Engineering and Automation
+    - payload: inform_eae
+      title: Electronical and Automation Engineering
+    - payload: inform_spw
+      title: Structure and Public Works (Master Civil Engineering)
+    - payload: inform_eesd
+      title: Energy Efficiency and Sustainable Development
+    text: 'There are the following courses in Sustainable Development engineering faculty:'
+  utter_course_bm:
+  - buttons:
+    - payload: inform_af
+      title: Accounting and Finance
+    - payload: inform_bfs
+      title: Banking and Financial Services
+    - payload: inform_hrm
+      title: Human Resource Management
+    - payload: inform_mkt
+      title: Marketing
+    - payload: inform_sbm
+      title: Sustainable Business Management
+    text: 'The following courses are available in Business and Management faculty:'
+  utter_fee_under_ntl:
+  - text: For undergraduate course:\n \n -Mauritian students only pay administrative fee of Rs 5500 and \n \n -application fee Rs 700
+  - text: For Maritiuan student, only \n \n -administrative costs of Rs 5,500 and \n \n -application fee Rs 700
+  utter_fee_under_sadc:
+  - text: SADC country student:\n -undergraduate course cost Rs 45,000 per year for full-time \n \n -part-time course as from Rs 30,000 \n \n -application fee is Rs 700
+  - text: For SADC country:\n \n -undergraduate student should pays Rs 45,000 per year for full-time course \n \n -part-time course as from Rs 30,000 \n \n -application fee is Rs 700
+  utter_fee_under_intl:
+  - text: For international students outside the SADC country:\n \n -undergraduate course cost Rs 80,000 per year for full-time \n \n -part-time course as from Rs 30,000 \n \n -application fee is Rs 700
+  - text: International undergraduate students outside the SADC country should pay Rs 80,000 per year for full-time course \n \n -part-time course as from Rs 30,000 \n \n -application fee is Rs 700.
+  utter_fee_post_eesd:
+  - text: For Master Energy Efficiency and Sustainable Development Rs 100,000 per year.
+  utter_fee_post_spw:
+  - text: Master Civil Engineering in Structure and Public Works Rs 100,000 per year.
+  utter_fee_post_air:
+  - text: Master Artificial Intelligence and Robotics Rs 150,000 per year.
+  utter_fee_post_sbm:
+  - text: Master Sustainable Business Management Rs 140,000 per year.
+  utter_fee_mphil_phd_ntl_sadc:
+  - text: For MPhil and PhD Rs 60,000 per year
+  - text: MPhil and PhD cost Rs 60,000 per year
+  utter_fee_mphil_phd_intl:
+  - text: For Mphil and PhD Rs 107,000 per year
+  - text: MPhil and PhD cost Rs 107,000 per year
+  utter_intake:
+  - text: Intake is done once a year at the beginning of August
+  - text: Intake is at the beginning of August each year
+  - text: Intake is done once a year in beginning of August
+  - text: Intake is made at the beginning of August of each year
+  utter_registration:
+  - text: Application for courses for students is open at 15 January 2021 and closes 30 March 2021. Send your application documents by mail on \n \n admission-international@udm.ac.mu
+  - text: Students registration is between January 15, 2021 until March 30, 2021. Send your application documents by mail on \n \n admission-international@udm.ac.mu
+  - text: You can register from  January 15, 2021 to March 30, 2021. Send your application documents by mail on \n \n admission-international@udm.ac.mu
+  - text: You can enroll from January 15, 2021 to March 30, 2021. Send your application documents by mail on \n \n admission-international@udm.ac.mu
+  - text: You can apply as from January 15, 2021 to March 30, 2021. Send your application documents by mail on \n \n admission-international@udm.ac.mu
+  utter_story:
+  - text: Université Des Mascareignes, UDM for close friends was founded in 2012. This happened after a merger between the IST (Institut Supérieur de Technologie) at Rose-Hill and Swami Dayanand Institute of Management (SDIM) at Pamplemousses. It is thus the fourth and the youngest public University in Mauritius, which provides tertiary education in Engineering, Sustainable Development, Banking and Finance, Management and Information Technology. It has a close working collaboration with the Université de Limoges, France. The Université Des Mascareignes (UdM) currently has 1,325 students who are enrolled in different programmes at both undergraduate and postgraduate levels. The bulk of the degrees are dual certificates. one from UdM and another from the Université de Limoges in France, according to the European LMD system. This allows students to earn degrees which are internationally recognized.
+  utter_degree:
+  - text: UDM delivers several degrees. The bulk of the degrees are dual certificates one from Université Des Mascareignes and another from the Université de Limoges in France, according to the European LMD system. Our diplomas are:\n Diploma - BEng (Hons)\n - BSc (Hons)\n - Master\n - MPhil (Master of Philosophy)\n - PhD (Philosophiae Doctor)
+  - text: The most of the degrees are double endorsements. One from Université Des Mascareignes and another from the Université de Limoges in France, as indicated by the European LMD framework. This permits understudies to procure degrees which are universally perceived. UDM delivers degrees like:\n Diploma - BEng (Hons)\n - BSc (Hons)\n - Master\n - MPhil (Master of Philosophy)\n - PhD (Philosophiae Doctor)
+  utter_degree_mphil_phd:
+  - text: For more information about MPhil and PhD degree, please contact us by mail on:\n \n -ecoledoctorale@udm.ac.mu
+  - text: Please contact us for more information about MPhil and PhD degree, mail us on:\n \n -ecoledoctorale@udm.ac.mu
+  - text: Get in touch with us for ample information about MPhil and PhD degree, mail us on:\n \n -ecoledoctorale@udm.ac.mu
+  utter_address_udm:
+  - image: https://udm.ac.mu/wp-content/uploads/2020/06/270917_mascareigne.jpg
+    text: UDM is located on two address:\n \n -Rose-Hill campus at Avenue de la Concorde,Roches Brunes \n \n -Swamy Dayanand campus at Beau Plan Round About Pamplemousses
+  utter_contact:
+  - text: You can contact us on:\n \n -Rose-Hill campus Tel 230-460-9500 \n \n -Swamy Dayanand campus Tel 230-260-4500
+  - text: Feel free to contact us on:\n \n -Rose-Hill campus Tel 230-460-9500 \n \n -Swamy Dayanand campus Tel 230-260-4500
+  utter_social_media:
+  - text: Stay connected with us on:\n \n -facebook > https://www.facebook.com/UniversiteDesMascareignes \n \n -instagram > https://www.instagram.com/universite.des.mascareignes \n -twitter > https://twitter.com/udmmauritius?lang=en \n \n -LinkedIn > https://www.linkedin.com/school/16172101 \n \n -youtube > https://www.youtube.com/c/UNIVERSIT%C3%89DESMASCAREIGNES
+  - text: You can follow us on:\n \n -facebook > https://www.facebook.com/UniversiteDesMascareignes \n \n -instagram > https://www.instagram.com/universite.des.mascareignes \n \n -twitter > https://twitter.com/udmmauritius?lang=en \n \n -LinkedIn > https://www.linkedin.com/school/16172101 \n \n -youtube > https://www.youtube.com/c/UNIVERSIT%C3%89DESMASCAREIGNES
+  - text: Follow the latest news about UDM on:\n \n -facebook - https://www.facebook.com/UniversiteDesMascareignes/ \n \n -instagram - https://www.instagram.com/universite.des.mascareignes \n \n -twitter - https://twitter.com/udmmauritius?lang=en \n \n -LinkedIn - https://www.linkedin.com/school/16172101 \n \n -youtube - https://www.youtube.com/c/UNIVERSIT%C3%89DESMASCAREIGNES
+  utter_min_deg_under:
+  - text: For undergraduate courses you must have at least one of these degree or equivalent:\n \n -Higher School Certificate \n \n -Baccalauréat \n \n -Brevet Technique
+  - text: For undergraduate courses one of the following degree or equivalent is required:\n \n -Higher School Certificate\n \n -Baccalauréat \n \n -Brevet Technique
+  - text: For undergraduate courses applicant must to hold an:\n \n -Higher School Certificate \n \n -Baccalauréat \n -Brevet Technique
+  utter_min_deg_post:
+  - text: BSc/Licence or equivalent in related field
+  utter_min_deg_topup:
+  - text: For Topup Degree you must have at least one of these degree or equivalent:\n \n -DUST (Diplome d'Université en Science et Technologie)  or a \n \n -diploma or \n \n -degree in the field of engineering from recognized institution
+  - text: For Topup Degree one of the following degree or equivalent is required:\n \n -DUST (Diplome d'Université en Science et Technologie) or a \n \n -diploma or \n \n -degree in the field of engineering from recognized institution
+  - text: For Topup Degree applicant must to hold an:\n \n -DUST (Diplome d'Université en Science et Technologie) or a \n \n -diploma or \n \n -degree in the field of engineering or equivalent from recognized institution
+  utter_min_deg_mphil_phd:
+  - text: For MPhil and PhD you must have respectively:\n \n - Second class Honours degree (or overseas equivalent) in a related subject \n \n -Master’s degree (or overseas equivalent) in a related subject area
+  - text: Minimum degree for MPhil and PhD:\n \n -Second class Honours degree (or overseas equivalent) in a related subject \n \n -Master’s degree (or overseas equivalent) in a related subject area
+  utter_apply_under_link:
+  - text: Please get application form this link:\n \n https://udm.ac.mu/wp-content/uploads/2020/11/3-INTERNATIONAL-APPLICATION-FORM-2020.pdf
+  - text: Please follow this link to get application form:\n \n https://udm.ac.mu/wp-content/uploads/2020/11/3-INTERNATIONAL-APPLICATION-FORM-2020.pdf
+  utter_apply_mphil_phd_link:
+  - text: Please get application form this link:\n \n https://udm.ac.mu/wp-content/uploads/2020/05/Research-Degree-Application-form.docx
+  - text: Please follow this link to get application form:\n \n https://udm.ac.mu/wp-content/uploads/2020/05/Research-Degree-Application-form.docx
+  utter_unilim:
+  - image: https://www.unilim.fr/wp-content/uploads/sites/8/2015/09/logo-ul@2x.png
+    text: For more information about University of Limoge visit this website:\n \n https://www.unilim.fr/
+  utter_info_ce:
+  - image: https://www.icebookshop.com/getattachment/4b715ce7-fae7-466e-aca5-21d711bf12ae/Engineer-800x566.jpg.aspx?lang=en-GB&width=800&height=566&ext=.jpg
+    text: Civil engineering is concerned with the conception, design, construction and maintenance of fixed structures or public works. This is a serious and challenging field. The design and build of bridges, roads, airports, flood defences and the like, requires a high degree of proficiency in a range of technical disciplines.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-in-civil-engineering/\n BSc Degree > https://udm.ac.mu/course/bsc-hons-in-civil-engineering/\n BEng Degree > https://udm.ac.mu/course/beng-electrical-engineering-and-automation/
+  utter_info_eee:
+  - image: https://semielectronics.com/wp-content/uploads/2017/08/Career-for-an-Electronics-Engineer.jpg
+    text: To be able to cope with technological advances and complexities of industrial systems, graduates need to understand electrical, electronics and automation engineering along with good communication skills, health and safety issues.\n For more information about:\n - BEng Degree > https://udm.ac.mu/course/beng-electrical-engineering-and-automation/
+  utter_info_ere:
+  - image: https://scienzamagia.eu/wp-content/uploads/2017/07/fonti-energia-rinnovabile.jpg
+    text: To be able to cope with growing demands in the fields of electrotechnics and renewable energy sources and energy production and distribution, graduants need to understand the fundamentals underlying the physical operation, analysis, design and maintenance of electrical and electronic circuits and systems, principles of electrical machines and including power electronics.\n For more information about:\n - BSc Degree > https://udm.ac.mu/course/bsc-hons-in-electrotechnics-and-renewable-energy
+  utter_info_fmhre:
+  - image: https://roomkeypms.com/wp-content/uploads/2019/02/Hotel-Maintenance-Made-Easy.jpg
+    text: This course provides a cross-disciplinary knowledge (technical and management). It meets the needs to train middle managers capable of providing competent technical  maintenance and facilities management in the hotel industry as well as buildings receiving and hosting the public, including hospitals and clinics.\n For more information about:\n - BSc Degree > https://udm.ac.mu/course/bsc-hons-facilities-management-of-hotels-and-real-estates/
+  utter_info_ee:
+  - image: https://www.mascotinternational.in/wp-content/uploads/sites/7/2019/04/electromechanical-1.jpg
+    text: Electromechanical engineers can design, build, control, and maintain a wide range of engineering products and processes. It aims to meet the increasing demand for engineers with cross-disciplinary skills, particularly in the fields of automation, flexible manufacturing, electromechanical power systems, and maintenance management among others.\n For more information about:\n - BSc Degree > https://udm.ac.mu/course/bsc-honsin-electromechanical-engineering/
+  utter_info_eea:
+  - image: https://www.classyexecutiveblog.com/wp-content/uploads/2019/06/automation-food.jpg
+    text: To be able to cope with technological advances and complexities of industrial systems, graduates need to understand electrical, electronics and automation engineering along with good communication skills, health and safety issues.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-in-electrical-engineering-and-automation/ \n BSc Degree > https://udm.ac.mu/course/bsc-hons-in-electrical-engineering-and-automation
+  utter_info_eae:
+  - image: https://www.macleans.ca/wp-content/uploads/2015/11/MAC92_COLLEGES_ELECTROMAGNETIC_POST01.jpg
+    text: The diploma in Electromechanical & Automation Engineering develops highly marketable skills for the technology, manufacturing and maintenance sectors. It provides outstanding hands on laboratory practicals as applied in the Electromechanical and Automation Industries. Thus, preparing the graduates for leading a team and collaborating effectively with specialists or engineers.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-in-electromechanical-automation-engineering/
+  utter_info_af:
+  - image: https://www.mdx.ac.uk/__data/assets/image/0023/518045/accounting-banner-img.jpg
+    text: This programme is designed to cover the core skills as well as the soft skills essential to embark for a successful career in the accounting and finance world. You will be exposed to accounting standards, auditing guidelines as well as accounting for decision making.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-in-accounting-and-finance/ \n BSc Degree > https://udm.ac.mu/course/bschons-in-accounting-and-finance/
+  utter_info_bfs:
+  - image: https://www.bbva.com/wp-content/uploads/en/2017/08/bbva-banca-gestion-finanzas-personales-e1502964736294.jpg
+    text: This programme is designed to cover the essential understanding that you need to prepare for a successful career in banking and financial services. You will have the opportunity to investigate and analyse a range of issues relating to the financial markets, the core elements of banking and the financial world at large.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-in-banking-and-financial-services/ \n BSc Degree > https://udm.ac.mu/course/bschons-in-banking-and-financial-services/
+  utter_info_hrm:
+  - image: https://461200-1444427-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/02/HR.jpg
+    text: This degree course covers both practical and theoretical aspects of contemporary HRM. It has been designed to provide students with the required knowledge, skills and expertise to become competent professionals in the HR field and employable on the global job market.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-human-resource-management/ \n BSc Degree > https://udm.ac.mu/course/bsc-hons-human-resource-management/
+  utter_info_mkt:
+  - image: https://www.marketingdonut.co.uk/sites/default/files/how-can-market-research-help-me301082705.jpg
+    text: This programme pursues the course programme of the Diploma in Marketing designed to cover the core skills as well as the soft skills essential to embark for a successful career in the accounting and finance world. For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-human-resource-management/ \n BSc Degree > https://udm.ac.mu/course/bsc-marketing/
+  utter_info_acs:
+  - image: https://www.usnews.com/dims4/USNEWS/94ce2db/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd8%2Fa6%2F2f234ea34f86bffc79f0807992e3%2Fcomputerscienceprofessional.jpg
+    text: Graduates of the Bachelor in Applied Computer Science will be well equipped to meet the requirements of both industrial and commercial organisations for information technology specialists. We offer Industrial Experience (Stage) on this program, which combine academic study with industrial placement between your taught modules and projects.\n For more information about:\n - BSc Degree > https://udm.ac.mu/course/bschons-in-applied-computer-science/
+  utter_info_gdm:
+  - image: https://www.tightpromotions.com/images/Graphic-Design.jpg
+    text: This programme aims at preparing students to become ICT professionals and support the fast developing ICT sector of Mauritius. The aim of this program is to provide students with an extensive knowledge of new digital technologies and multimedia. These studies are increasingly being adopted in the areas of traditional media and communication, for example, digital multimedia in audio-visual and multimedia applications in education.\n For more information about:\n - BSc Degree > https://udm.ac.mu/course/bsc-hons-in-graphics-design-and-multimedia/
+  utter_info_se:
+  - image: https://www.gettingsmart.com/wp-content/uploads/2017/07/Coding-Computer-Science.jpg
+    text: This course provides skills and knowledge  to design and develop software systems for all sorts of platforms like desktop/laptop  computers, smart and mobile devices, cloud platforms and websites.  At the same time , this course gives a broad overview of all fundamental concepts of modern information systems used in industry including hardware, operating systems, multiimedia and networking. It also includes an introduction to new trending fields of computing development such as Internet of Things, Data analytics and Artificial Intelligence.\n For more information about:\n - Diploma Degree > https://udm.ac.mu/course/diploma-software-engineering \n BSc Degree > https://udm.ac.mu/course/bsc-software-engineering
+  utter_info_air:
+  - image: https://media.wired.com/photos/5cdef92d38916b321aa0c474/master/pass/Facebook-Robots-00.jpg
+    text: The main objective of the AIR Master is to create a culture of interdisciplinarity in order to promote research and innovation using AI and Robotics in order to serve the society of tomorrow. Possible fields of application are > Health, Education, Energy, Environment, Maritime, road surveillance etc.\n For more information about:\n - Master Degree > https://udm.ac.mu/course/master-artificial-intelligence-and-robotics/
+  utter_info_spw:
+  - image: https://www.sambrandlaw.com/wp-content/uploads/2018/07/Competent-Supervisor.jpg
+    text: This Master is offered in partnership with the “Université de la Réunion” and successful students will graduate with double certificates from the “Université des Mascareignes” and “Université de la Réunion”. This postgraduate Master program of level BAC+5 aims to create highly skilled professionals by using in-depth knowledge in the field of Civil Engineering.\n For more information about:\n - Master Degree > https://udm.ac.mu/course/master-in-civil-engineering/
+  utter_info_eesd:
+  - image: https://businesspartners4sdgs.org/wp-content/uploads/2019/07/uscib-bpsd-pillars_white-middle.png
+    text: This master aims to provide theoretical and practical knowledge in the fields of energy systems and sustainable development. Its purpose is to train specialists in the field of energies and their intelligent management in a context of mitigation, adaptation to climate change and 'non-interconnected areas' (ZNI).\n For more information about:\n - Master Degree > https://udm.ac.mu/course/master-energy-efficiency-and-sustainable-development/
+  utter_info_sbm:
+  - image: https://485758.smushcdn.com/622655/wp-content/uploads/2019/05/sustainable-business.jpg?lossy=1&strip=1&webp=1
+    text: The Master in Sustainable Business Management programme is spread over two (2) years of study (440 hours in year 1 and 290 hours in year 2 to which are added one semester for the industrial placement and thesis). The Master in Sustainable Business Management will follow the French system and the modules are distributed in the “unités d’enseignements” (UE) and developed in terms of Semester.\n For more information about:\n - Master Degree > https://udm.ac.mu/course/master-in-sustainable-business-management/
+actions:
+- utter_set_username
+- Utter_set_newsletter
+- utter_ask_mail
+- utter_greet
+- utter_greet_name
+- utter_goodbye
+- utter_goodbye_name
+- utter_thankyou
+- utter_bot
+- utter_affirm
+- utter_accept
+- utter_deny
+- utter_introduce
+- utter_introduce_name
+- utter_age
+- utter_language
+- utter_slogan
+- utter_fallback_nlu
+- utter_ask_country
+- utter_ask_under_post_mphil_phd
+- utter_campus
+- utter_faculty
+- utter_course_ict
+- utter_course_sde
+- utter_course_bm
+- utter_fee_under_ntl
+- utter_fee_under_sadc
+- utter_fee_under_intl
+- utter_fee_post_eesd
+- utter_fee_post_spw
+- utter_fee_post_air
+- utter_fee_post_sbm
+- utter_fee_mphil_phd_ntl_sadc
+- utter_fee_mphil_phd_intl
+- utter_intake
+- utter_registration
+- utter_story
+- utter_degree
+- utter_degree_mphil_phd
+- utter_address_udm
+- utter_contact
+- utter_social_media
+- utter_min_deg_under
+- utter_min_deg_post
+- utter_min_deg_topup
+- utter_min_dge_mphil_phd
+- utter_apply_under_link
+- utter_apply_mphil_phd_link
+- utter_unilim
+- utter_info_ce
+- utter_info_eee
+- utter_info_ere
+- utter_info_fmhre
+- utter_info_ee
+- utter_info_eea
+- utter_info_eae
+- utter_info_af
+- utter_info_bfs
+- utter_info_hrm
+- utter_info_mkt
+- utter_info_acs
+- utter_info_gdm
+- utter_info_se
+- utter_info_air
+- utter_info_spw
+- utter_info_eesd
+- utter_info_sbm
+forms: {}
+e2e_actions: []

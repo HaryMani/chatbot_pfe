@@ -1,0 +1,1158 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - good afternoon
+    - hey there
+    - goodmorning
+    - goodevening
+    - goodafternoon
+    - helo
+    - g'day
+    - gday
+    - yo
+    - Hi, i want to know about course
+    - Hey, can you talk me about fee
+    - Hi bot, can i get come information about course and fee
+    - Hey bot
+    - Hello, please give me information about fee and course
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+    - hallo
+    - heeey
+    - hi hi
+    - hey hey
+    - hello there
+    - hola
+    - hi?
+    - hey bot!
+    - hello friend
+    - hello
+    - hi bot
+    - hi
+- intent: greet_name
+  examples: |
+    - hey, i'm [mary](username)
+    - hello, my name is [abdul](username)
+    - hallo, call me [charles](username)
+    - hi, here is [vikash](username)
+    - hello there, [jay](username) is talking to you
+    - good morning [udm bot](bot_name), you can call me [yash](username)
+    - good evening [bot](bot_name), i'm [martine](username)
+    - good afternoon [assistant](bot_name), call me [john](username)
+    - hey i'm [mary](username)
+    - hello my name is [abdul](username)
+    - hallo call me [charles](username)
+    - hi here is [vikash](username)
+    - hello there [jay](username) is talking to you
+    - good morning [udm bot](bot_name) you can call me [yash](username)
+    - good evening [bot](bot_name) i'm [martine](username)
+    - good afternoon [assistant](bot_name) call me [john](username)
+    - yo [bot] it's [david](username)
+    - hey [bot](bot_name), my name is [manitra](username)
+    - hibot, my name is [manitra](username)
+    - hi bot, my name is kevin
+    - hi [bot](bot_name), my name is [manitra](username)
+- intent: goodbye
+  examples: |
+    - thnks and cu
+    - good by
+    - cee you later
+    - good night
+    - thanks and bye
+    - thank you goodbye
+    - thanks a lot have a nice day
+    - thank you see you around
+    - bye bye
+    - see you later
+    - talk to you later
+    - i'm off
+    - have a good day
+    - take care
+    - goodnight
+    - exit
+    - bye
+- intent: goodbye_name
+  examples: |
+    - thnks and cu [bot](bot_name)
+    - good by [assistant](bot_name)
+    - see you later [udm bot](bot_name)
+    - good night [bot](bot_name)
+    - thanks and bye [assistant](bot_name)
+    - thank you goodbye [udm bot](bot_name)
+    - thanks a lot have a nice day [bot](bot_name)
+    - thank you see you around [assistant](bot_name)
+    - bye bye [udm bot](bot_name)
+    - see you later [bot](bot_name)
+    - talk to you later [assistant](bot_name)
+    - i'm off [udm bot](bot_name)
+    - have a good day [bot](bot_name)
+    - take care [assistant](bot_name)
+    - goodnight [udm bot](bot_name)
+    - exit [bot](bot_name)
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - exact
+    - right
+    - ok
+    - yep
+    - ye
+    - uh yes
+    - let's do it
+    - yeah
+    - um yes
+    - yes knocking
+    - that's correct
+    - yes yes
+    - yea
+    - yes right
+    - yes and i dont care
+    - right on
+    - i love that
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not
+    - nope
+    - no new selection
+    - no thanks
+    - no thank you
+    - uh no
+    - breath no
+    - do you have something else
+    - no this does not work for me
+- intent: why
+  examples: |
+    - why
+    - give me a reason
+    - for what reason
+    - wtf
+    - aim
+    - objective
+    - intention
+    - intent
+    - logic
+    - purpose
+    - rationlity
+    - what motivate you to ask this
+    - what's it use
+    - what does it matter
+    - motivation
+    - why my country
+    - why do you know my origin
+    - how could you
+    - collecting information for what purpose
+- intent: ask_language
+  examples: |
+    - do you handle other language
+    - do you speak another language
+    - speaking french
+    - do you understand other language
+    - handling other language
+    - can you deal in french
+    - [english](spk_language)
+    - how many languages you speak
+    - do you handle other than [english](spk_language)
+    - talk to me in an other language
+    - reply me in in another language
+    - do you speak french?
+- intent: ask_name
+  examples: |
+    - what's your name and how old are you
+    - your name
+    - how can i call you and how old are you
+    - may i have your name
+    - do you mind if i ask your name
+    - how do they call call you
+    - how is one to call you
+    - may i know your name and when you were developed
+    - do you have a name for yourself
+    - what do peopple call you
+    - what's your name
+    - can i know your name
+- intent: ask_name2
+  examples: |
+    - my name is [brad](username) and yours
+    - i'm [nathalie](username) and you
+    - call me [rogers](username) tell me yours
+    - just call me [bruce](username) and you
+    - my name is [manitra](username) and yours?
+    - my name is kevin, and you?
+    - my name is [arthur](username), and yours?
+    - my name is [manitra](username) and you?
+- intent: ask_age
+  examples: |
+    - what is your name and how old are you
+    - tell me your name and age
+    - are you older than me
+    - when you were invented
+    - has it been a long time since you were invented
+    - have you been invented for a long time
+    - since when have you been in service
+    - are you old or young bot
+    - can i know your age
+    - you are old enough to understand
+    - i guess you are old enough to understand
+    - tell me your age
+- intent: ask_sex
+  examples: |
+    - are you a boy or girl
+    - what is your gender
+    - what is your sexual orientation
+    - what gender do you belong to
+    - female or male bot
+    - man or woman
+    - are you a boy or girl?
+- intent: ask_slogan
+  examples: |
+    - what is the slogan of [universite des mascareignes](udm_name)
+    - [udm](udm_name) slogan
+    - tell me the [udm](udm_name) slogan
+    - slogan of the [udm](udm_name)
+    - do you know [udm](udm_name) slogan
+    - what is the [udm](udm_name) slogan please?
+- intent: get_newsletter
+  examples: |
+    - I want to subscribe to newsletter
+    - Can you subscribe to newsletter
+    - Is it possible to subscribe to newsletter
+    - subscribe me to newsletter
+    - I want to subscribe to news letter
+    - Can you subscribe to news letter
+    - Is it possible to subscribe to news letter
+    - subscribe me to news letter
+- intent: inform_mail
+  examples: |
+    - this is my mail [example@mail.com](usermail)
+    - subscribe this mail to newsletter [example@mail.com](usermail)
+    - [example@mail.com](usermail)
+    - subscribe me to newsletter by this mail [example@mail.com](usermail)
+    - here is [example@mail.com](usermail)
+    - this is my mail [example@mail.com](usermail) subscribe it to newsletter
+    - subscribe me to newsletter by this mail [example@gmail.com](usermail)
+- intent: get_course
+  examples: |
+    - Tell me course
+    - what course are available
+    - I want to get some informations about course
+    - I want to know available course
+    - course
+    - courses
+    - what about courses
+    - can you inform me about course
+    - i would like to know about course
+    - i want to get some informations about course
+    - can you please give me information about course
+    - do you have something to tell me about course
+    - can you tell me about course
+    - tell me about course
+    - tell me about course please
+- intent: get_intake
+  examples: |
+    - when is the next intake
+    - next intake
+    - intake
+    - can you tell me the next intake
+    - when course starting
+    - beginning of course
+    - are you able to tell me the intake date
+    - could you inform me about intake
+    - when is the start of the course
+    - can you inform me about intake date
+    - when course starting?
+- intent: get_story
+  examples: |
+    - when [udm](udm_name) was set up
+    - about [udm](udm_name)
+    - tell me more about [udm](udm_name)
+    - story of [udm](udm_name)
+    - [udm](udm_name)
+    - [universite des mascareignes](udm_name)
+    - history
+    - do you know [udm](udm_name) story?
+- intent: get_registration
+  examples: |
+    - i want to know that's when the registration starts
+    - when will there be registration
+    - registration dates
+    - date of registration please
+    - the last date of registration please
+    - i would like to know the last registration date
+    - how do i do to apply
+    - help me to apply
+    - i want to aplly
+    - i want to apply
+- intent: get_fee
+  examples: |
+    - how much is the course fee
+    - tell me about fees
+    - how about fees
+    - fees
+    - talk me about fee
+- intent: get_address
+  examples: |
+    - where is the [udm](udm_name)
+    - what is the address of the [udm](udm_name)
+    - address
+    - where is the campus
+    - where the [udm](udm_name) situated is
+    - give me address of [udm](udm_name)
+    - location of [universite des mascareignes](udm_name)
+    - [rose-hill](campus_name)
+    - [pamplemousses](campus_name)
+    - can you indicate me the [udm](udm_name) location?
+- intent: get_contact
+  examples: |
+    - can you give me the contact of [udm](udm_name)
+    - how can i contact the [udm](udm_name)
+    - contact
+    - can i have some telephone number of the [udm](udm_name)
+    - some phone number
+    - tel number please
+    - mobile number
+    - i want to call
+    - speaking with human please
+    - i like to speak with a real human being
+    - i would like to talk with a person
+    - i want to contact real human
+- intent: get_faculty
+  examples: |
+    - how many faculty are there
+    - how many faculties exist
+    - what are the faculties that are in [pamplemousses](campus_name)
+    - what are the faculties that are in [rose-hill](campus_name)
+    - which faculty exists at the same time on both campuses
+    - what are the faculties in [pamplemousses](campus_name) campus
+    - do you know thing about faculty at [udm](udm_name)
+    - faculty
+- intent: get_degree
+  examples: |
+    - what degree will issue there
+    - the degree that can be obtained there
+    - tell me about degree
+    - what about degree
+    - degree
+    - do you have informations about degrees issue there
+    - give me some examples degree can be obtained at [udm](udm_name)
+    - talk about issued degrees
+    - i want to get information about issued degrees
+    - what are degees issue there?
+- intent: thankyou
+  examples: |
+    - thanks
+    - thank you
+    - thnk you
+    - thnks
+    - thnk u
+    - thk u
+    - thks
+    - you rock
+    - cool
+    - genious
+    - great
+    - amazing
+    - awesome
+    - pretty cool
+    - fantastic
+    - um thank you good bye
+    - okay cool uh good bye thank you
+    - okay thank you good bye
+    - and thats all thank you and good bye
+    - thank you and good bye
+    - sorry about my mistakes thank you good bye
+    - noise thank you good bye
+    - thank you goodbye noise
+    - okay thank you goodbye
+    - uh thank you good bye
+    - thank you goodbye
+    - thank you goodbye noise thank you goodbye
+    - breath thank you goodbye
+    - okay thank you
+    - thanks goodbye
+    - ah thank you goodbye
+    - thank you noise
+    - thank you good bye
+    - breath thank you very much goodbye
+    - noise thank you goodbye
+    - unintelligible thank you goodbye
+    - uh okay thank you good bye
+    - thank you bye
+    - um okay thank you good bye
+- intent: ask_bot
+  examples: |
+    - are you a bot
+    - are you a human
+    - am I talking to a bot
+    - who deal wiht me
+    - who talk with me
+    - it seems like you are a bot
+    - can you tell me your nature
+    - human or bot
+    - are you real
+    - human being or bot?
+    - i behave like a bot, are you/
+- intent: inform_mphil_phd_course
+  examples: |
+    - [phd](course_degree) course
+    - [mphil](course_degree) study
+    - [phd](course_degree)
+    - [mphil](course_degree)
+    - [phd](course_degree) program
+    - [mphil](course_degree) program
+- intent: inform_under
+  examples: |
+    - [under](course_degree)
+    - [undergraduate](course_degree) program
+    - [under graduate](course_degree)
+    - [beng](course_degree) course
+    - [bsc](course_degree) study
+    - [diploma](course_degree)
+    - [dust](course_degree) program
+- intent: inform_post
+  examples: |
+    - [post](course_degree)
+    - [postgraduate](course_degree) program
+    - [post graduate](course_degree)
+    - [postgraduate](course_degree) course
+    - [postgraduate](course_degree) study
+    - [postgraduate](course_degree)
+- intent: inform_topup
+  examples: |
+    - [topup](course_degree)
+    - [topup](course_degree) program
+    - [topup](course_degree) course
+    - [topup](course_degree) study
+- intent: get_campus
+  examples: |
+    - how many campus are there
+    - is there more than one campus
+    - campus
+    - is there several campuses
+    - i found two addresses, is there more than one campus?
+- intent: get_soc_media
+  examples: |
+    - is [udm](udm_name) on social media
+    - social media of [udm](udm_name)
+    - [facebook](social_media)
+    - [instagram](social_media)
+    - [youtube](social_media)
+    - [twitter](social_media)
+    - [linkedin](social_media)
+    - is [udm](udm_name) exists in social media?
+- intent: get_min_diploma
+  examples: |
+    - what is the minimum degree to follow course at [udm](udm_name)
+    - what diploma do i need to be able to access [udm](udm_name)
+    - minimum degree
+    - minimum diploma
+    - i want to apply, what is the minimum degree i should have?
+- intent: inform_ntl
+  examples: |
+    - [mru](ntl_origin)
+    - [morys](ntl_origin)
+    - [mrys](ntl_origin)
+    - [moris](ntl_origin)
+    - [mris](ntl_origin)
+    - [mauritian](ntl_origin)
+    - [morisyen](ntl_origin)
+    - [morysien](ntl_origin)
+    - [muritian](ntl_origin)
+    - [maritian](ntl_origin)
+    - [rodrigo](ntl_origin)
+    - [rodrigue](ntl_origin)
+    - [rodirg](ntl_origin)
+    - [rodrg](ntl_origin)
+    - [rodrig](ntl_origin)
+    - [rodri](ntl_origin)
+    - [nation](ntl_origin)
+    - [nasyon](ntl_origin)
+    - i'm from [mauritius](ntl_origin)
+- intent: inform_sadc
+  examples: |
+    - [sadc](sadc_origin)
+    - [angola](sadc_origin)
+    - [angolan](sadc_origin)
+    - [botswana](sadc_origin)
+    - [motswana](sadc_origin)
+    - [comoros](sadc_origin)
+    - [union of the comoros](sadc_origin)
+    - [comoran](sadc_origin)
+    - [comorien](sadc_origin)
+    - [comorienne](sadc_origin)
+    - [democratic republic of congo](sadc_origin)
+    - [drc](sadc_origin)
+    - [rdc](sadc_origin)
+    - [congolese](sadc_origin)
+    - [congo](sadc_origin)
+    - [congolais](sadc_origin)
+    - [congolaise](sadc_origin)
+    - [eswatini](sadc_origin)
+    - [liswati](sadc_origin)
+    - [swaziland](sadc_origin)
+    - [swazi](sadc_origin)
+    - [lesotho](sadc_origin)
+    - [basotho](sadc_origin)
+    - [madagascar](sadc_origin)
+    - [madagasikara](sadc_origin)
+    - [dago](sadc_origin)
+    - [mada](sadc_origin)
+    - [malagasy](sadc_origin)
+    - [gasy](sadc_origin)
+    - [malawi](sadc_origin)
+    - [malawian](sadc_origin)
+    - [mozambique](sadc_origin)
+    - [mozambican](sadc_origin)
+    - [namibia](sadc_origin)
+    - [seychelles](sadc_origin)
+    - [seselwa](sadc_origin)
+    - [sesel](sadc_origin)
+    - [seychellois](sadc_origin)
+    - [seychelloise](sadc_origin)
+    - [south africa](sadc_origin)
+    - [south african](sadc_origin)
+    - [united republic of tanzania](sadc_origin)
+    - [tanzanian](sadc_origin)
+    - [zambia](sadc_origin)
+    - [zambian](sadc_origin)
+    - [zimbabwe](sadc_origin)
+    - [zimbabwean](sadc_origin)
+    - [zimbo](sadc_origin)
+- intent: inform_intl
+  examples: |
+    - [non-sadc](no_sadc_origin)
+    - [no-sadc](no_sadc_origin)
+    - [algeria](no_sadc_origin)
+    - [algerian](no_sadc_origin)
+    - [benin](no_sadc_origin)
+    - [beninese](no_sadc_origin)
+    - [beninois](no_sadc_origin)
+    - [burkina faso](no_sadc_origin)
+    - [burkinabe](no_sadc_origin)
+    - [burkinese](no_sadc_origin)
+    - [burundi](no_sadc_origin)
+    - [burundese](no_sadc_origin)
+    - [cameroon](no_sadc_origin)
+    - [cameroonian](no_sadc_origin)
+    - [cameroune](no_sadc_origin)
+    - [camerounais](no_sadc_origin)
+    - [camerounaise](no_sadc_origin)
+    - [cape verde](no_sadc_origin)
+    - [central african republic](no_sadc_origin)
+    - [centre-afrique](no_sadc_origin)
+    - [congo-brazzaville](no_sadc_origin)
+    - [brazzaville](no_sadc_origin)
+    - [djibouti](no_sadc_origin)
+    - [djiboutien](no_sadc_origin)
+    - [djiboutienne](no_sadc_origin)
+    - [djiboutian](no_sadc_origin)
+    - [egypt](no_sadc_origin)
+    - [egytian](no_sadc_origin)
+    - [egytien](no_sadc_origin)
+    - [egiptienne](no_sadc_origin)
+    - [egyptian](no_sadc_origin)
+    - [equatorial guinea](no_sadc_origin)
+    - [eritrea](no_sadc_origin)
+    - [eritrean](no_sadc_origin)
+    - [ethiopia](no_sadc_origin)
+    - [ethiopian](no_sadc_origin)
+    - [gabon](no_sadc_origin)
+    - [gabonais](no_sadc_origin)
+    - [gabonaise](no_sadc_origin)
+    - [gambia](no_sadc_origin)
+    - [gambian](no_sadc_origin)
+    - [ghana](no_sadc_origin)
+    - [ghanean](no_sadc_origin)
+    - [guinea](no_sadc_origin)
+    - [guinean](no_sadc_origin)
+    - [guinein](no_sadc_origin)
+    - [guineenne](no_sadc_origin)
+    - [guinea bissau](no_sadc_origin)
+    - [ivory coast](no_sadc_origin)
+    - [cote d'ivoire](no_sadc_origin)
+    - [ivoirien](no_sadc_origin)
+    - [ivoirienne](no_sadc_origin)
+    - [ivoirian](no_sadc_origin)
+    - [kenya](no_sadc_origin)
+    - [kenyan](no_sadc_origin)
+    - [liberia](no_sadc_origin)
+    - [liberian](no_sadc_origin)
+    - [libya](no_sadc_origin)
+    - [libyan](no_sadc_origin)
+    - [mali](no_sadc_origin)
+    - [malian](no_sadc_origin)
+    - [malien](no_sadc_origin)
+    - [malienne](no_sadc_origin)
+    - [mauritania](no_sadc_origin)
+    - [mauritanian](no_sadc_origin)
+    - [mauritanien](no_sadc_origin)
+    - [mauritanie](no_sadc_origin)
+    - [mauritanienne](no_sadc_origin)
+    - [mayotte](no_sadc_origin)
+    - [mahoran](no_sadc_origin)
+    - [mahorais](no_sadc_origin)
+    - [mahoraise](no_sadc_origin)
+    - [maorais](no_sadc_origin)
+    - [maoraise](no_sadc_origin)
+    - [morocco](no_sadc_origin)
+    - [morocan](no_sadc_origin)
+    - [maroc](no_sadc_origin)
+    - [marocain](no_sadc_origin)
+    - [marocaine](no_sadc_origin)
+    - [niger](no_sadc_origin)
+    - [nigerien](no_sadc_origin)
+    - [nigerienne](no_sadc_origin)
+    - [nigeria](no_sadc_origin)
+    - [nigerian](no_sadc_origin)
+    - [nigeriane](no_sadc_origin)
+    - [reunion](no_sadc_origin)
+    - [reunionnais](no_sadc_origin)
+    - [reuninnaise](no_sadc_origin)
+    - [rwanda](no_sadc_origin)
+    - [rwandan](no_sadc_origin)
+    - [rwandais](no_sadc_origin)
+    - [rwandaise](no_sadc_origin)
+    - [saint helena](no_sadc_origin)
+    - [ascension](no_sadc_origin)
+    - [tristan da cunha](no_sadc_origin)
+    - [sao tome and principe](no_sadc_origin)
+    - [senegal](no_sadc_origin)
+    - [senegalais](no_sadc_origin)
+    - [senegalaise](no_sadc_origin)
+    - [sierra leone](no_sadc_origin)
+    - [sierre leonean](no_sadc_origin)
+    - [somalia](no_sadc_origin)
+    - [somalian](no_sadc_origin)
+    - [sudan](no_sadc_origin)
+    - [sudanese](no_sadc_origin)
+    - [togo](no_sadc_origin)
+    - [togolese](no_sadc_origin)
+    - [togolais](no_sadc_origin)
+    - [togolaise](no_sadc_origin)
+    - [tunisia](no_sadc_origin)
+    - [tunisian](no_sadc_origin)
+    - [uganda](no_sadc_origin)
+    - [ugandan](no_sadc_origin)
+    - [western sahara](no_sadc_origin)
+    - [sahrawi](no_sadc_origin)
+    - [sahrawiya](no_sadc_origin)
+    - [afghanistan](no_sadc_origin)
+    - [afghan](no_sadc_origin)
+    - [albania](no_sadc_origin)
+    - [albanian](no_sadc_origin)
+    - [andorra](no_sadc_origin)
+    - [andorran](no_sadc_origin)
+    - [antiga](no_sadc_origin)
+    - [antigan](no_sadc_origin)
+    - [barbuda](no_sadc_origin)
+    - [barbudan](no_sadc_origin)
+    - [argentina](no_sadc_origin)
+    - [argentinean](no_sadc_origin)
+    - [armenia](no_sadc_origin)
+    - [armenian](no_sadc_origin)
+    - [australia](no_sadc_origin)
+    - [australian](no_sadc_origin)
+    - [austria](no_sadc_origin)
+    - [austrian](no_sadc_origin)
+    - [azerbaijan](no_sadc_origin)
+    - [azeri](no_sadc_origin)
+    - [azerbaijani](no_sadc_origin)
+    - [bahamas](no_sadc_origin)
+    - [bahamian](no_sadc_origin)
+    - [bahrain](no_sadc_origin)
+    - [bahraini](no_sadc_origin)
+    - [bangladesh](no_sadc_origin)
+    - [bangladeshi](no_sadc_origin)
+    - [barbados](no_sadc_origin)
+    - [barbadian](no_sadc_origin)
+    - [belarus](no_sadc_origin)
+    - [belarusian](no_sadc_origin)
+    - [belgium](no_sadc_origin)
+    - [belgian](no_sadc_origin)
+    - [belgique](no_sadc_origin)
+    - [belge](no_sadc_origin)
+    - [belize](no_sadc_origin)
+    - [belizean](no_sadc_origin)
+    - [bhutan](no_sadc_origin)
+    - [bhutanese](no_sadc_origin)
+    - [bolivia](no_sadc_origin)
+    - [bolivian](no_sadc_origin)
+    - [bosnia](no_sadc_origin)
+    - [bosnian](no_sadc_origin)
+    - [herzegovina](no_sadc_origin)
+    - [herzegovinan](no_sadc_origin)
+    - [brunei](no_sadc_origin)
+    - [bruneian](no_sadc_origin)
+    - [bulgaria](no_sadc_origin)
+    - [bulgarian](no_sadc_origin)
+    - [cambodia](no_sadc_origin)
+    - [cambodian](no_sadc_origin)
+    - [canada](no_sadc_origin)
+    - [canadian](no_sadc_origin)
+    - [canadien](no_sadc_origin)
+    - [canadienne](no_sadc_origin)
+    - [chile](no_sadc_origin)
+    - [chilean](no_sadc_origin)
+    - [china](no_sadc_origin)
+    - [chinese](no_sadc_origin)
+    - [colombia](no_sadc_origin)
+    - [colombian](no_sadc_origin)
+    - [costa rica](no_sadc_origin)
+    - [costa rican](no_sadc_origin)
+    - [croatia](no_sadc_origin)
+    - [croat](no_sadc_origin)
+    - [croatian](no_sadc_origin)
+    - [cuba](no_sadc_origin)
+    - [cuban](no_sadc_origin)
+    - [cyprus](no_sadc_origin)
+    - [cypriot](no_sadc_origin)
+    - [czech republic](no_sadc_origin)
+    - [czech](no_sadc_origin)
+    - [denmark](no_sadc_origin)
+    - [danish](no_sadc_origin)
+    - [dominica](no_sadc_origin)
+    - [dominican](no_sadc_origin)
+    - [dominican republic](no_sadc_origin)
+    - [ecuador](no_sadc_origin)
+    - [ecuadorean](no_sadc_origin)
+    - [el salvador](no_sadc_origin)
+    - [salvadorean](no_sadc_origin)
+    - [estonia](no_sadc_origin)
+    - [estonian](no_sadc_origin)
+    - [fiji](no_sadc_origin)
+    - [fijian](no_sadc_origin)
+    - [finland](no_sadc_origin)
+    - [finnish](no_sadc_origin)
+    - [finn](no_sadc_origin)
+    - [france](no_sadc_origin)
+    - [french](no_sadc_origin)
+    - [francais](no_sadc_origin)
+    - [francaise](no_sadc_origin)
+    - [français](no_sadc_origin)
+    - [française](no_sadc_origin)
+    - [georgia](no_sadc_origin)
+    - [georgian](no_sadc_origin)
+    - [germany](no_sadc_origin)
+    - [german](no_sadc_origin)
+    - [greece](no_sadc_origin)
+    - [greek](no_sadc_origin)
+    - [grenada](no_sadc_origin)
+    - [grenadian](no_sadc_origin)
+    - [guatemala](no_sadc_origin)
+    - [guatemalan](no_sadc_origin)
+    - [guyana](no_sadc_origin)
+    - [guyanese](no_sadc_origin)
+    - [haiti](no_sadc_origin)
+    - [haitian](no_sadc_origin)
+    - [haitien](no_sadc_origin)
+    - [haitienne](no_sadc_origin)
+    - [holy see](no_sadc_origin)
+    - [honduras](no_sadc_origin)
+    - [honduran](no_sadc_origin)
+    - [hungary](no_sadc_origin)
+    - [hungarian](no_sadc_origin)
+    - [iceland](no_sadc_origin)
+    - [icelandic](no_sadc_origin)
+    - [india](no_sadc_origin)
+    - [indian](no_sadc_origin)
+    - [indonesia](no_sadc_origin)
+    - [indonesian](no_sadc_origin)
+    - [iran](no_sadc_origin)
+    - [iranian](no_sadc_origin)
+    - [iraq](no_sadc_origin)
+    - [iraqi](no_sadc_origin)
+    - [ireland](no_sadc_origin)
+    - [irish](no_sadc_origin)
+    - [israel](no_sadc_origin)
+    - [israeli](no_sadc_origin)
+    - [italy](no_sadc_origin)
+    - [italian](no_sadc_origin)
+    - [jamaica](no_sadc_origin)
+    - [japan](no_sadc_origin)
+    - [japanese](no_sadc_origin)
+    - [jordan](no_sadc_origin)
+    - [jordanian](no_sadc_origin)
+    - [kazakhstan](no_sadc_origin)
+    - [kazakh](no_sadc_origin)
+    - [kiribati](no_sadc_origin)
+    - [i-kiribati](no_sadc_origin)
+    - [kuwait](no_sadc_origin)
+    - [kuwaiti](no_sadc_origin)
+    - [kyrgyzstan](no_sadc_origin)
+    - [kyrgystani](no_sadc_origin)
+    - [kyrgyz](no_sadc_origin)
+    - [laos](no_sadc_origin)
+    - [laotian](no_sadc_origin)
+    - [latvia](no_sadc_origin)
+    - [latvian](no_sadc_origin)
+    - [lebanon](no_sadc_origin)
+    - [lebanese](no_sadc_origin)
+    - [liechtenstein](no_sadc_origin)
+    - [liechtensteiner](no_sadc_origin)
+    - [lithuania](no_sadc_origin)
+    - [lithuanian](no_sadc_origin)
+    - [luxembourg](no_sadc_origin)
+    - [luxembourger](no_sadc_origin)
+    - [luxembourgeois](no_sadc_origin)
+    - [luxembourgeoise](no_sadc_origin)
+    - [malaysian](no_sadc_origin)
+    - [malaysia](no_sadc_origin)
+    - [maldives](no_sadc_origin)
+    - [maldivian](no_sadc_origin)
+    - [malta](no_sadc_origin)
+    - [maltese](no_sadc_origin)
+    - [marshal island](no_sadc_origin)
+    - [marshallese](no_sadc_origin)
+    - [mexico](no_sadc_origin)
+    - [mexican](no_sadc_origin)
+    - [micronesia](no_sadc_origin)
+    - [micronesain](no_sadc_origin)
+    - [moldova](no_sadc_origin)
+    - [moldavan](no_sadc_origin)
+    - [monaco](no_sadc_origin)
+    - [monegasque](no_sadc_origin)
+    - [monacan](no_sadc_origin)
+    - [mongolia](no_sadc_origin)
+    - [mongolian](no_sadc_origin)
+    - [montenegro](no_sadc_origin)
+    - [montenegrin](no_sadc_origin)
+    - [myanmar](no_sadc_origin)
+    - [burmese](no_sadc_origin)
+    - [burma](no_sadc_origin)
+    - [nauru](no_sadc_origin)
+    - [nauruan](no_sadc_origin)
+    - [nepal](no_sadc_origin)
+    - [nepalese](no_sadc_origin)
+    - [netherlands](no_sadc_origin)
+    - [netherlander](no_sadc_origin)
+    - [dutch](no_sadc_origin)
+    - [new zealand](no_sadc_origin)
+    - [zealander](no_sadc_origin)
+    - [nicaragua](no_sadc_origin)
+    - [nicaraguan](no_sadc_origin)
+    - [korea](no_sadc_origin)
+    - [korean](no_sadc_origin)
+    - [macedonia](no_sadc_origin)
+    - [macedonian](no_sadc_origin)
+    - [norway](no_sadc_origin)
+    - [norwegian](no_sadc_origin)
+    - [oman](no_sadc_origin)
+    - [omani](no_sadc_origin)
+    - [pakistan](no_sadc_origin)
+    - [pakistani](no_sadc_origin)
+    - [palau](no_sadc_origin)
+    - [palauna](no_sadc_origin)
+    - [palestine state](no_sadc_origin)
+    - [palestina](no_sadc_origin)
+    - [palestine](no_sadc_origin)
+    - [palestinian](no_sadc_origin)
+    - [panama](no_sadc_origin)
+    - [panamian](no_sadc_origin)
+    - [papua guinea](no_sadc_origin)
+    - [paraguay](no_sadc_origin)
+    - [paraguayan](no_sadc_origin)
+    - [peru](no_sadc_origin)
+    - [peruvian](no_sadc_origin)
+    - [philippines](no_sadc_origin)
+    - [filipino](no_sadc_origin)
+    - [poland](no_sadc_origin)
+    - [polish](no_sadc_origin)
+    - [pole](no_sadc_origin)
+    - [portugal](no_sadc_origin)
+    - [portuguese](no_sadc_origin)
+    - [qatar](no_sadc_origin)
+    - [qatari](no_sadc_origin)
+    - [romania](no_sadc_origin)
+    - [romanian](no_sadc_origin)
+    - [russia](no_sadc_origin)
+    - [russian](no_sadc_origin)
+    - [saint kitts and nevis](no_sadc_origin)
+    - [kittian](no_sadc_origin)
+    - [nevisian](no_sadc_origin)
+    - [saint lucia](no_sadc_origin)
+    - [lucian](no_sadc_origin)
+    - [saint vincent and grenadines](no_sadc_origin)
+    - [vencenian vincy](no_sadc_origin)
+    - [samoa](no_sadc_origin)
+    - [samoan](no_sadc_origin)
+    - [san marino](no_sadc_origin)
+    - [sammarinese](no_sadc_origin)
+    - [saudi arabia](no_sadc_origin)
+    - [arabian](no_sadc_origin)
+    - [serbia](no_sadc_origin)
+    - [serbian](no_sadc_origin)
+    - [singapore](no_sadc_origin)
+    - [singaporean](no_sadc_origin)
+    - [slovakia](no_sadc_origin)
+    - [slovak](no_sadc_origin)
+    - [slovenia](no_sadc_origin)
+    - [slovene](no_sadc_origin)
+    - [solomon islands](no_sadc_origin)
+    - [spain](no_sadc_origin)
+    - [spanish](no_sadc_origin)
+    - [sri lanka](no_sadc_origin)
+    - [sri lankan](no_sadc_origin)
+    - [surinam](no_sadc_origin)
+    - [surinamese](no_sadc_origin)
+    - [sweden](no_sadc_origin)
+    - [swedish](no_sadc_origin)
+    - [switzerland](no_sadc_origin)
+    - [swiss](no_sadc_origin)
+    - [suisse](no_sadc_origin)
+    - [suissesse](no_sadc_origin)
+    - [syria](no_sadc_origin)
+    - [syrian](no_sadc_origin)
+    - [tajikistan](no_sadc_origin)
+    - [tajik](no_sadc_origin)
+    - [tadjik](no_sadc_origin)
+    - [tchad](no_sadc_origin)
+    - [tchadian](no_sadc_origin)
+    - [tchadien](no_sadc_origin)
+    - [tchadienne](no_sadc_origin)
+    - [thailand](no_sadc_origin)
+    - [thai](no_sadc_origin)
+    - [timor leste](no_sadc_origin)
+    - [timorese](no_sadc_origin)
+    - [maubere](no_sadc_origin)
+    - [tonga](no_sadc_origin)
+    - [tongan](no_sadc_origin)
+    - [trinidad and tobago](no_sadc_origin)
+    - [trinidadian](no_sadc_origin)
+    - [tobagonian](no_sadc_origin)
+    - [turkey](no_sadc_origin)
+    - [turkish](no_sadc_origin)
+    - [turkmenistan](no_sadc_origin)
+    - [turkmen](no_sadc_origin)
+    - [turkoman](no_sadc_origin)
+    - [tuvalu](no_sadc_origin)
+    - [tuvaluan](no_sadc_origin)
+    - [ukrain](no_sadc_origin)
+    - [ukrainian](no_sadc_origin)
+    - [eau](no_sadc_origin)
+    - [emirati](no_sadc_origin)
+    - [united arab emirates](no_sadc_origin)
+    - [united kingdom](no_sadc_origin)
+    - [british](no_sadc_origin)
+    - [briton](no_sadc_origin)
+    - [usa](no_sadc_origin)
+    - [united states of america](no_sadc_origin)
+    - [american](no_sadc_origin)
+    - [uruguay](no_sadc_origin)
+    - [uruguayan](no_sadc_origin)
+    - [uzbekistan](no_sadc_origin)
+    - [uzbek](no_sadc_origin)
+    - [vanuatu](no_sadc_origin)
+    - [vanuatuan](no_sadc_origin)
+    - [venezuela](no_sadc_origin)
+    - [venezuelan](no_sadc_origin)
+    - [vietnam](no_sadc_origin)
+    - [vietnamese](no_sadc_origin)
+    - [yemen](no_sadc_origin)
+    - [yemeni](no_sadc_origin)
+    - [yugoslavia](no_sadc_origin)
+    - [yugoslav](no_sadc_origin)
+- intent: inform_faculty_sde
+  examples: |
+    - faculty [sustainable development engineering](faculty_sde)
+    - faculty [sustainable development](faculty_sde)
+    - [sustainable development](faculty_sde)
+    - [development engineering](faculty_sde)
+- intent: inform_faculty_ict
+  examples: |
+    - faculty [information communication technology](faculty_ict)
+    - [information communication technology](faculty_ict)
+    - [information communication](faculty_ict)
+    - [information technology](faculty_ict)
+- intent: inform_faculty_bm
+  examples: |
+    - faculty [business management](faculty_bm)
+    - [business management](faculty_bm)
+- intent: inform_ce
+  examples: |
+    - [civil engineering](engineer_course)
+    - [civil eng](engineer_course)
+    - [civil engine](engineer_course)
+    - [civil engineer](engineer_course)
+- intent: inform_eee
+  examples: |
+    - [electrical and electronic engineering](engineer_course)
+    - [electrical and electronic](engineer_course)
+    - [electronic engineering](engineer_course)
+    - [electric and electronic](engineer_course)
+    - [electronic engineer](engineer_course)
+- intent: inform_ere
+  examples: |
+    - [Electrotechnics and Renewable Energy](engineer_course)
+    - [Electrotechnics and Renewable](engineer_course)
+    - [Renewable Energy](engineer_course)
+    - [new energy](engineer_course)
+- intent: inform_fmhre
+  examples: |
+    - [Facilities Management of Hotels and Real Estates](engineer_course)
+    - [Facilities Management of Hotels and Real](engineer_course)
+    - [Facilities Management of Hotels](engineer_course)
+    - [Facility Management of Hotel](engineer_course)
+    - [Facilities Management](engineer_course)
+    - [Management of Hotels and Real estates](engineer_course)
+    - [Hotels and Real estates](engineer_course)
+    - [Management of Hotel](engineer_course)
+    - [Real estates](engineer_course)
+    - [facility management](engineer_course)
+- intent: inform_ee
+  examples: |
+    - [Electromechanical Engineering](engineer_course)
+    - [Electromechanical](engineer_course)
+- intent: inform_eea
+  examples: |
+    - [Electrical Engineering and Automation](engineer_course)
+    - [Electrical Engineering](engineer_course)
+    - [Engineering and Automation](engineer_course)
+    - [engineer and automation](engineer_course)
+    - [electric engineer](engineer_course)
+- intent: inform_eae
+  examples: |
+    - [Electronical and Automation Engineering](engineer_course)
+    - [Electronical and Automation](engineer_course)
+    - [Automation Engineering](engineer_course)
+    - [Electronic and Automation](engineer_course)
+    - [automatic engineer](engineer_course)
+    - [electronic automatic](engineer_course)
+    - [electroic and automatic](engineer_course)
+- intent: inform_af
+  examples: |
+    - [Accounting and Finance](business_course)
+    - [accountant](business_course)
+    - [account and finance](business_course)
+    - [accountancy finance](business_course)
+- intent: inform_bfs
+  examples: |
+    - [Banking and Financial Services](business_course)
+    - [Banking and Financial](business_course)
+    - [banki finance](business_course)
+    - [Banking](business_course)
+    - [Financial Services](business_course)
+    - [Bank](business_course)
+    - [finance service](business_course)
+    - [bank and finance](business_course)
+- intent: inform_hrm
+  examples: |
+    - [Human Resource Management](business_course)
+    - [Human Resource](business_course)
+    - [Resource Management](business_course)
+    - [Human Resource Managing](business_course)
+- intent: inform_mkt
+  examples: |
+    - [marketing](business_course)
+    - [market](business_course)
+    - [business](business_course)
+    - [commercial](business_course)
+- intent: inform_acs
+  examples: |
+    - [Applied Computer Science](ict_course)
+    - [Applied Computer](ict_course)
+    - [Computer Science](ict_course)
+    - [apply computer](ict_course)
+    - [apply computing](ict_course)
+    - [applied computer science](ict_course)
+- intent: inform_gdm
+  examples: |
+    - [Graphics Design and Multimedia](ict_course)
+    - [Graphics Design](ict_course)
+    - [Graphics Designer](ict_course)
+    - [Graphics Designing](ict_course)
+    - [Designing and Multimedia](ict_course)
+    - [Design and media](ict_course)
+- intent: inform_se
+  examples: |
+    - [software Engineering](ict_course)
+    - [software developer](ict_course)
+    - [Software Engineer](ict_course)
+    - [Software development](ict_course)
+- intent: inform_air
+  examples: |
+    - master in [Artificial Intelligence and Robotics](ict_master_course)
+    - [Artificial Intelligence](ict_master_course)
+    - [Intelligence and Robotics](ict_master_course)
+    - [robotic](ict_master_course)
+    - [robot](ict_master_course)
+- intent: inform_spw
+  examples: |
+    - [Master Civil Engineering](engineer_master_course) wiht specialisation in [Structure and Public Works](engineer_master_course)
+    - [Master Civil Engineering](engineer_master_course)
+    - [Structure and Public Works](engineer_master_course)
+    - [public work](engineer_master_course)
+- intent: inform_eesd
+  examples: |
+    - [Master in Energy Efficiency and Sustainable Development](engineer_master_course)
+    - [Energy Efficiency](engineer_master_course)
+    - [Master in Energy](engineer_master_course)
+    - [Energy Efficiency and Sustainable Development](engineer_master_course)
+- intent: inform_sbm
+  examples: |
+    - [Master in Sustainable Business Management](business_master_course)
+    - [Master in Sustainable Business](business_master_course)
+    - [Sustainable Business](business_master_course)
+- intent: nlu_fallback
+  examples: |
+    - all
+    - all of them
+    - tell me all
+    - i want to eat pizza
+    - can i book restaurant
+    - could you tell me about the weather
+    - can you share your boss with me?
+    - i want to get to know your owner
+    - i want to know the company which designed you
+    - i want to know the company which generated you
+    - i want to know the company which invented you
+    - i want to know who invented you
+    - May I ask who invented you?
+    - please tell me the company who created you
+    - please tell me who created you
+    - tell me more about your creators
+    - tell me more about your founders
+    - Ahoy matey how are you?
+    - are you alright
+    - are you having a good day
+    - Are you ok?
+    - are you okay
+    - Do you feel good?
+    - how are things going
+    - how are things with you?
+    - How are things?
+    - how are you
+    - how are you doing
+    - how are you doing this morning
+    - how are you feeling
+    - how are you today
+    - How are you?
+    - How is the weather today?
+    - What's the weather like?
+    - How is the weather?
+    - What is the weather at your place?
+    - Do you have good weather?
+    - Is it raining?
+    - What's it like out there?
+    - Is it hot or cold?
+    - Beautiful day, isn't it?
+    - What's the weather forecast?
+    - Is it quite breezy outside?
