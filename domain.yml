@@ -494,7 +494,7 @@ actions:
 - utter_min_deg_under
 - utter_min_deg_post
 - utter_min_deg_topup
-- utter_min_dge_mphil_phd
+- utter_min_deg_mphil_phd
 - utter_apply_under_link
 - utter_apply_mphil_phd_link
 - utter_unilim
