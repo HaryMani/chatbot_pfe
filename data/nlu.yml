@@ -190,6 +190,7 @@ nlu:
     - what do peopple call you
     - what's your name
     - can i know your name
+    - what's your name?
 - intent: ask_name2
   examples: |
     - my name is [brad](username) and yours
