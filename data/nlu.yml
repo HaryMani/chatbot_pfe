@@ -267,6 +267,8 @@ nlu:
     - can you tell me about course
     - tell me about course
     - tell me about course please
+    - what can i study at [udm](udm_name)
+    - what are the programs at [udm](udm_name)
 - intent: get_intake
   examples: |
     - when is the next intake
@@ -290,6 +292,7 @@ nlu:
     - [universite des mascareignes](udm_name)
     - history
     - do you know [udm](udm_name) story?
+    - what is [udm](udm_name)
 - intent: get_registration
   examples: |
     - i want to know that's when the registration starts
@@ -321,6 +324,7 @@ nlu:
     - [rose-hill](campus_name)
     - [pamplemousses](campus_name)
     - can you indicate me the [udm](udm_name) location?
+    - where is [udm](udm_name)
 - intent: get_contact
   examples: |
     - can you give me the contact of [udm](udm_name)
@@ -335,6 +339,7 @@ nlu:
     - i like to speak with a real human being
     - i would like to talk with a person
     - i want to contact real human
+    - who is responsible of [udm](udm_name)
 - intent: get_faculty
   examples: |
     - how many faculty are there
@@ -1156,3 +1161,5 @@ nlu:
     - Beautiful day, isn't it?
     - What's the weather forecast?
     - Is it quite breezy outside?
+    - what is all these about
+    - fuck you
