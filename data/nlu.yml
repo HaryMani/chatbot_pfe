@@ -38,6 +38,7 @@ nlu:
     - hello
     - hi bot
     - hi
+    - Hi
 - intent: greet_name
   examples: |
     - hey, i'm [mary](username)
@@ -61,6 +62,7 @@ nlu:
     - hibot, my name is [manitra](username)
     - hi bot, my name is kevin
     - hi [bot](bot_name), my name is [manitra](username)
+    - Hello! I am fenou
 - intent: goodbye
   examples: |
     - thnks and cu
@@ -267,6 +269,7 @@ nlu:
     - can you tell me about course
     - tell me about course
     - tell me about course please
+    - Courses
 - intent: get_intake
   examples: |
     - when is the next intake
@@ -982,6 +985,7 @@ nlu:
     - [information communication technology](faculty_ict)
     - [information communication](faculty_ict)
     - [information technology](faculty_ict)
+    - [Information Communication Technology](faculty_ict)
 - intent: inform_faculty_bm
   examples: |
     - faculty [business management](faculty_bm)
@@ -1156,3 +1160,4 @@ nlu:
     - Beautiful day, isn't it?
     - What's the weather forecast?
     - Is it quite breezy outside?
+    - [Je](no_sadc_origin) t'aime
