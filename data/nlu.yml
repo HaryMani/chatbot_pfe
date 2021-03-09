@@ -123,6 +123,7 @@ nlu:
     - yes and i dont care
     - right on
     - i love that
+    - Ok
 - intent: deny
   examples: |
     - no
@@ -190,6 +191,7 @@ nlu:
     - what do peopple call you
     - what's your name
     - can i know your name
+    - what's your name?
 - intent: ask_name2
   examples: |
     - my name is [brad](username) and yours
