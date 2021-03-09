@@ -58,9 +58,11 @@ nlu:
     - good afternoon [assistant](bot_name) call me [john](username)
     - yo [bot] it's [david](username)
     - hey [bot](bot_name), my name is [manitra](username)
-    - hibot, my name is [manitra](username)
-    - hi bot, my name is kevin
+    - hi[bot](bot_name), my name is [manitra](username)
+    - hi [bot](bot_name), my name is[ ](spk_language)[ kevin](spk_language)[kevin](username)[kevin](username)[k](spk_language)evin
     - hi [bot](bot_name), my name is [manitra](username)
+    - hi [bot](bot_name), i am [Francy](username)
+    - hi [bot](bot_name), my name is [Francy](username)
 - intent: goodbye
   examples: |
     - thnks and cu
@@ -197,7 +199,7 @@ nlu:
     - call me [rogers](username) tell me yours
     - just call me [bruce](username) and you
     - my name is [manitra](username) and yours?
-    - my name is kevin, and you?
+    - my name is [kevin](username), and you?
     - my name is [arthur](username), and yours?
     - my name is [manitra](username) and you?
 - intent: ask_age
@@ -398,6 +400,7 @@ nlu:
     - uh okay thank you good bye
     - thank you bye
     - um okay thank you good bye
+    - i love you
 - intent: ask_bot
   examples: |
     - are you a bot
@@ -986,6 +989,7 @@ nlu:
   examples: |
     - faculty [business management](faculty_bm)
     - [business management](faculty_bm)
+    - [Business and Management](faculty_bm)
 - intent: inform_ce
   examples: |
     - [civil engineering](engineer_course)
