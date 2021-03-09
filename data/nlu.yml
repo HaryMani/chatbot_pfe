@@ -38,6 +38,7 @@ nlu:
     - hello
     - hi bot
     - hi
+    - howdy!
 - intent: greet_name
   examples: |
     - hey, i'm [mary](username)
@@ -98,6 +99,8 @@ nlu:
     - take care [assistant](bot_name)
     - goodnight [udm bot](bot_name)
     - exit [bot](bot_name)
+    - bye bot!
+    - Bye bot
 - intent: affirm
   examples: |
     - yes
@@ -200,6 +203,7 @@ nlu:
     - my name is kevin, and you?
     - my name is [arthur](username), and yours?
     - my name is [manitra](username) and you?
+    - My name is [Manitra](username), and yours?
 - intent: ask_age
   examples: |
     - what is your name and how old are you
@@ -214,6 +218,7 @@ nlu:
     - you are old enough to understand
     - i guess you are old enough to understand
     - tell me your age
+    - How old are you
 - intent: ask_sex
   examples: |
     - are you a boy or girl
@@ -223,6 +228,12 @@ nlu:
     - female or male bot
     - man or woman
     - are you a boy or girl?
+    - Man or woman
+    - Sex
+    - Gender?
+    - Girl?
+    - Boy or girl
+    - Are you a boy or girl?
 - intent: ask_slogan
   examples: |
     - what is the slogan of [universite des mascareignes](udm_name)
@@ -267,6 +278,7 @@ nlu:
     - can you tell me about course
     - tell me about course
     - tell me about course please
+    - Course
 - intent: get_intake
   examples: |
     - when is the next intake
@@ -309,6 +321,7 @@ nlu:
     - how about fees
     - fees
     - talk me about fee
+    - Fee
 - intent: get_address
   examples: |
     - where is the [udm](udm_name)
@@ -321,6 +334,10 @@ nlu:
     - [rose-hill](campus_name)
     - [pamplemousses](campus_name)
     - can you indicate me the [udm](udm_name) location?
+    - give me [udm](udm_name) addresses
+    - Give me [udm](udm_name) addresses
+    - Addresses
+    - Address
 - intent: get_contact
   examples: |
     - can you give me the contact of [udm](udm_name)
@@ -335,6 +352,8 @@ nlu:
     - i like to speak with a real human being
     - i would like to talk with a person
     - i want to contact real human
+    - give me phone number pls
+    - I want to talk with someone
 - intent: get_faculty
   examples: |
     - how many faculty are there
@@ -345,6 +364,8 @@ nlu:
     - what are the faculties in [pamplemousses](campus_name) campus
     - do you know thing about faculty at [udm](udm_name)
     - faculty
+    - Faculty
+    - How many faculty are there please?
 - intent: get_degree
   examples: |
     - what degree will issue there
@@ -398,6 +419,10 @@ nlu:
     - uh okay thank you good bye
     - thank you bye
     - um okay thank you good bye
+    - thank you!
+    - thank you bot
+    - Thank you
+    - Thank you bot
 - intent: ask_bot
   examples: |
     - are you a bot
@@ -459,6 +484,7 @@ nlu:
     - [twitter](social_media)
     - [linkedin](social_media)
     - is [udm](udm_name) exists in social media?
+    - are [udm](udm_name) is in social media?
 - intent: get_min_diploma
   examples: |
     - what is the minimum degree to follow course at [udm](udm_name)
@@ -982,6 +1008,7 @@ nlu:
     - [information communication technology](faculty_ict)
     - [information communication](faculty_ict)
     - [information technology](faculty_ict)
+    - [Information Communication Technology](faculty_ict)
 - intent: inform_faculty_bm
   examples: |
     - faculty [business management](faculty_bm)
@@ -1094,6 +1121,7 @@ nlu:
     - [Intelligence and Robotics](ict_master_course)
     - [robotic](ict_master_course)
     - [robot](ict_master_course)
+    - [Artificial Intelligence and Robotics](ict_master_course)
 - intent: inform_spw
   examples: |
     - [Master Civil Engineering](engineer_master_course) wiht specialisation in [Structure and Public Works](engineer_master_course)
@@ -1156,3 +1184,4 @@ nlu:
     - Beautiful day, isn't it?
     - What's the weather forecast?
     - Is it quite breezy outside?
+    - Adresses
