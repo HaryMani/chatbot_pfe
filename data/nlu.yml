@@ -36,10 +36,10 @@ nlu:
     - hey bot!
     - hello friend
     - hello
-    - hi bot
     - hi
 - intent: greet_name
   examples: |
+    - hi bot
     - hey, i'm [mary](username)
     - hello, my name is [abdul](username)
     - hallo, call me [charles](username)
@@ -61,6 +61,7 @@ nlu:
     - hibot, my name is [manitra](username)
     - hi bot, my name is kevin
     - hi [bot](bot_name), my name is [manitra](username)
+    - Hello bot
 - intent: goodbye
   examples: |
     - thnks and cu
@@ -80,6 +81,7 @@ nlu:
     - goodnight
     - exit
     - bye
+    - Bye
 - intent: goodbye_name
   examples: |
     - thnks and cu [bot](bot_name)
@@ -123,6 +125,7 @@ nlu:
     - yes and i dont care
     - right on
     - i love that
+    - Yes
 - intent: deny
   examples: |
     - no
@@ -267,6 +270,8 @@ nlu:
     - can you tell me about course
     - tell me about course
     - tell me about course please
+    - Courses
+    - Course
 - intent: get_intake
   examples: |
     - when is the next intake
@@ -309,6 +314,7 @@ nlu:
     - how about fees
     - fees
     - talk me about fee
+    - Fees
 - intent: get_address
   examples: |
     - where is the [udm](udm_name)
@@ -321,6 +327,9 @@ nlu:
     - [rose-hill](campus_name)
     - [pamplemousses](campus_name)
     - can you indicate me the [udm](udm_name) location?
+    - [Udm](udm_name) address
+    - Give me  address
+    - Where is the [udm](udm_name)
 - intent: get_contact
   examples: |
     - can you give me the contact of [udm](udm_name)
@@ -345,6 +354,7 @@ nlu:
     - what are the faculties in [pamplemousses](campus_name) campus
     - do you know thing about faculty at [udm](udm_name)
     - faculty
+    - How many faculty are there
 - intent: get_degree
   examples: |
     - what degree will issue there
@@ -398,6 +408,8 @@ nlu:
     - uh okay thank you good bye
     - thank you bye
     - um okay thank you good bye
+    - Thank you so much
+    - Thank you
 - intent: ask_bot
   examples: |
     - are you a bot
@@ -487,6 +499,7 @@ nlu:
     - [nation](ntl_origin)
     - [nasyon](ntl_origin)
     - i'm from [mauritius](ntl_origin)
+    - [Rodrigues](ntl_origin)
 - intent: inform_sadc
   examples: |
     - [sadc](sadc_origin)
@@ -1156,3 +1169,4 @@ nlu:
     - Beautiful day, isn't it?
     - What's the weather forecast?
     - Is it quite breezy outside?
+    - Bitch
